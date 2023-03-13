@@ -16,10 +16,10 @@ char *_strdup(char *str)
 		return (NULL);
 	i = 0;
 
-	while (str[i] != '\0')
+	while (str[i]!= '\0')
 		i++;
 
-	a = malloc(sizeof(char) * (i + 1);
+	a = malloc(sizeof(char) * (i + 1));
 
 	if (a == NULL)
 		return (NULL);
@@ -30,4 +30,3 @@ char *_strdup(char *str)
 
 	return (a);
 }
-
