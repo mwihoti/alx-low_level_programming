@@ -7,21 +7,22 @@
  * 	   otherwise convert number
  */
 unsigned int binary_to_uint(const char *b){
-	unsigned int unInt = 0, num = 1;
-	int intLen;
+	 int intLen;
+	unsigned int unInt,
+	num = 0;
 
 	if (!b)
 		return (0);
-	
-	for (intLen = 0; b[intLen];)
-		intLen++;
-	for (intLen -= 1; intLen >= 0;)
+	for (intLen = 0; b[intLen] != '\0';intLen++)
 	{
-		if(b[intLen] != '0' && b[intLen] != '1')
+		if (b[intLen] != '\0' && b[intLen] != '1')
 			return (0);
-
-		unInt += (b[intLen] - '0') * num;
-		num *= 2;
+	}
+	for (intLen = 0; b[ intLen] != '0'; intLen++)
+	{
+		unInt <<= 1;
+		if (b[intLen] == '1')
+			num += 1;
 	}
 	return (unInt);
 	
