@@ -10,12 +10,12 @@
 
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-        int c, num = 0;
-        unsigned long int previous;
-        unsigned long int ex = n ^ m;
+	int c, num = 0;
+	unsigned long int previous;
+	unsigned long int ex = n ^ m;
 
-        for (c = 63; c >= 0; c--)
-        {
+	for (c = 63; c >= 0; c--)
+	{
 	previous = ex >> c;
 	if (previous & 1)
 	num++;
