@@ -22,7 +22,7 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - main
+ * main - entry point of the program
  * @argc: number of arguements.
  * @argv: arguments vector
  * return: 0
