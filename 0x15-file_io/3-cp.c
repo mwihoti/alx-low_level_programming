@@ -25,8 +25,9 @@ void error_file(int file_from, int file_to, char *argv[])
  * main - entry point of the program
  * @argc: number of arguements.
  * @argv: arguments vector
- * return: 0
+ * Return: 0 success
  */
+
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
