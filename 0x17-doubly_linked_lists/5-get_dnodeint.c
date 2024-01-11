@@ -2,7 +2,7 @@
 
 /**
  * get_dnodeint_at_index - returns the nth of node list
- * @head?: pointer to list head
+ * @head: pointer to list head
  * @index: index of the node to searchfor
  * Return: nth node or null
  */
